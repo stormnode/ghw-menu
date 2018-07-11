@@ -7,6 +7,9 @@ with the
 [latest commit](https://github.com/ReactTraining/react-router/pull/6014)
 added in...
 
+As the released version was published over
+[7 months ago](https://www.npmjs.com/package/react-router-redux)
+
 ## Project Deprecated
 
 This project is no longer maintained. For your Redux <-> Router syncing needs, please see one of these libraries instead:
