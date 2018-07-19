@@ -48,7 +48,33 @@ function Home(props) {
       This is a test for the next 60 seconds,...  This is only a test.
       I like this test.
       Alot...
+      How far will the text go to the right and when will it go to the next line.  Let me know what happens...
+      The fact this this text goes to the next line.
+      Is a very, very good thing for me to see this actually working.
+      Very cool...
     </p>
+
+    <p>
+      This is a test for the next 60 seconds,...  This is only a test.
+      I like this test.
+      Alot...
+      How far will the text go to the right and when will it go to the next line.  Let me know what happens...
+      The fact this this text goes to the next line.
+      Is a very, very good thing for me to see this actually working.
+      Very cool...
+    </p>
+
+    <Typography variant="display4">
+      This is a test for the next 60 seconds,...  This is only a test.
+      I like this test.
+      Alot...
+      How far will the text go to the right and when will it go to the next line.  Let me know what happens...
+      The fact this this text goes to the next line.
+      Is a very, very good thing for me to see this actually working.
+      Very cool...
+    </Typography>
+
+
     <Typography>
       This is another test
     </Typography>
