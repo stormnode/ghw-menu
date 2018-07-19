@@ -78,7 +78,7 @@ class MenuAppBar extends React.Component {
               color="inherit"
               className={classes.flex}
             >
-              Title
+              Github Worlds
             </Typography>
             <div>
               <Typography
@@ -88,7 +88,7 @@ class MenuAppBar extends React.Component {
                 onClick={this.handleMenu}
                 color="inherit"
               >
-                Menu
+                Views
               </Typography>
               <Menu
                 id="menu-appbar1"
