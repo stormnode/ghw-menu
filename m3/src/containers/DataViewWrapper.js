@@ -6,12 +6,12 @@ const repoMap = {
   repo1: "material-ui.json",
   repo2: "graphql-js.json",
   repo3: "html5-node-diagram.json",
-  repo4: "ivy.json",
-  repo5: "nodejs-sandboxed-fs.json"
+  repo4: "nodejs-sandboxed-fs.json",
+  repo5: "ivy.json"
 };
 
 const template =
-  "https://raw.githubusercontent.com/stormasm/ghdata/master/data1/";
+  "https://raw.githubusercontent.com/stormasm/ghdata/master/ghw/data1/";
 
 class DataViewWrapper extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class DataViewWrapper extends React.Component {
     const { repo, view } = props;
 
     this.state = {
-      data: {},
+      data: [],
       isLoading: false,
       error: null,
       repoName: repoMap[repo],
@@ -82,7 +82,7 @@ class DataViewWrapper extends React.Component {
   }
 
   render() {
-    const hits = this.state.data.hits || [];
+    const hits = this.state.data || [];
 
     if (this.state.error) {
       return <p>{this.state.error.message}</p>;
