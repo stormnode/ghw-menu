@@ -22,7 +22,9 @@ function Gh1CardNoImage(props) {
       <Card className={classes.card}>
         <CardContent>
           <Typography gutterBottom variant="headline" component="p">
-            <a href={"https://github.com/" + tile.login}>{tile.login}</a>
+            <a href={"https://github.com/" + tile.login} target="_blank">
+              {tile.login}
+            </a>
           </Typography>
           <Typography component="p">{tile.name}</Typography>
           <Typography component="p">
