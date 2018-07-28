@@ -5,8 +5,6 @@ import match from "autosuggest-highlight/match";
 import parse from "autosuggest-highlight/parse";
 
 import { withStyles } from "@material-ui/core/styles";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
 
 import TextField from "@material-ui/core/TextField";
 import Paper from "@material-ui/core/Paper";
@@ -19,7 +17,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 
-import GhCard from "./../cards/GhCard";
+import GhCardViewHorizontal from "./../cards/GhCardViewHorizontal";
 
 const num_of_item_dropdowns = 6;
 const repoMap = {
@@ -268,17 +266,7 @@ class GridListAutoSuggest extends React.Component {
         </div>
 
         <div className={classes.root}>
-          <GridList
-            cellHeight={250}
-            className={classes.gridListSingleLine}
-            cols={6}
-          >
-            {hitsug.map(tile => (
-              <GridListTile key={tile.avatar} cols={tile.cols || 1}>
-                <GhCard tile={tile} />
-              </GridListTile>
-            ))}
-          </GridList>
+          <GhCardViewHorizontal tileData={hitsug} />
         </div>
 
         <div>
