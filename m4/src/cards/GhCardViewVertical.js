@@ -18,9 +18,6 @@ const styles = theme => ({
   gridList: {
     width: 600,
     backgroundColor: grey[50]
-  },
-  subheader: {
-    width: "100%"
   }
 });
 
