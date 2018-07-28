@@ -18,17 +18,17 @@ function GhCardViewHorizontal(props) {
 
   return (
     <div>
-        <GridList
-          cellHeight={250}
-          className={classes.gridListSingleLine}
-          cols={6}
-        >
-          {tileData.map(tile => (
-            <GridListTile key={tile.avatar}>
-              <GhCard tile={tile} />
-            </GridListTile>
-          ))}
-        </GridList>
+      <GridList
+        cellHeight={250}
+        className={classes.gridListSingleLine}
+        cols={6}
+      >
+        {tileData.map(tile => (
+          <GridListTile key={tile.avatar}>
+            <GhCard tile={tile} />
+          </GridListTile>
+        ))}
+      </GridList>
     </div>
   );
 }
