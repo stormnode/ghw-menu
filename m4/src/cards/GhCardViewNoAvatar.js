@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GhCardNoImage from "./GhCardNoImage";
-import lightGreen from "@material-ui/core/colors/lightGreen";
+import grey from "@material-ui/core/colors/grey";
 
 const styles = theme => ({
   root: {
@@ -17,13 +17,7 @@ const styles = theme => ({
   },
   gridList: {
     width: 600,
-    backgroundColor: lightGreen[100]
-  },
-  gridListSingleLine: {
-    flexWrap: "nowrap",
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: "translateZ(0)",
-    backgroundColor: lightGreen[100]
+    backgroundColor: grey[50]
   },
   subheader: {
     width: "100%"
