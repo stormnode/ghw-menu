@@ -9,7 +9,7 @@ export function selectedKey(state = "repo1", action) {
   }
 }
 
-export const keys = (state = ["repo1", "repo2", "repo3"], action) => {
+export const keys = (state = ["repo1", "repo2", "repo3", "repo4", "repo5"], action) => {
   switch (action.type) {
     case ADD_KEY:
       return [...state, action.key];
