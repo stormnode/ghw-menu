@@ -4,29 +4,12 @@ import { withStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GhCard from "./../cards/GhCard";
-import lightGreen from "@material-ui/core/colors/lightGreen";
+import grey from "@material-ui/core/colors/grey";
 
 const styles = theme => ({
-  root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    height: 250,
-    backgroundColor: theme.palette.background.paper
-  },
-  gridList: {
-    width: 600,
-    backgroundColor: lightGreen[100]
-  },
   gridListSingleLine: {
     flexWrap: "nowrap",
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: "translateZ(0)",
-    backgroundColor: lightGreen[100]
-  },
-  subheader: {
-    width: "100%"
+    backgroundColor: grey[50]
   }
 });
 
@@ -35,19 +18,17 @@ function GhCardViewHorizontal(props) {
 
   return (
     <div>
-      <div className={classes.root}>
         <GridList
           cellHeight={250}
           className={classes.gridListSingleLine}
           cols={6}
         >
           {tileData.map(tile => (
-            <GridListTile key={tile.avatar} cols={tile.cols || 1}>
+            <GridListTile key={tile.avatar}>
               <GhCard tile={tile} />
             </GridListTile>
           ))}
         </GridList>
-      </div>
     </div>
   );
 }
