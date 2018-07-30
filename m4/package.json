@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://stormasm.github.io/ghw-menu",
   "dependencies": {
-    "@material-ui/core": "^1.4.1",
-    "@material-ui/docs": "^1.0.0-alpha.3",
+    "@material-ui/core": "^1.4.2",
+    "@material-ui/docs": "^1.0.0-alpha.4",
     "@material-ui/icons": "^2.0.0",
     "autosuggest-highlight": "3.1.1",
     "classnames": "latest",
@@ -19,7 +19,7 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "4.3.1",
     "react-scripts": "latest",
-    "recompose": "^0.27.1",
+    "recompose": "^0.28.0",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
