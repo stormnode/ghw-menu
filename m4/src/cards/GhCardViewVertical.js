@@ -9,14 +9,10 @@ import grey from "@material-ui/core/colors/grey";
 const styles = theme => ({
   root: {
     display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    height: 250,
-    backgroundColor: theme.palette.background.paper
+    height: 300
   },
   gridList: {
-    width: 600,
+    width: "100%",
     backgroundColor: grey[50]
   }
 });
@@ -27,9 +23,9 @@ function GhCardViewVertical(props) {
   return (
     <div>
       <div className={classes.root}>
-        <GridList cellHeight={250} className={classes.gridList} cols={3}>
+        <GridList cellHeight={250} className={classes.gridList} cols={6}>
           {tileData.map(tile => (
-            <GridListTile key={tile.avatar} cols={tile.cols || 1}>
+            <GridListTile key={tile.avatar}>
               <GhCard tile={tile} />
             </GridListTile>
           ))}
